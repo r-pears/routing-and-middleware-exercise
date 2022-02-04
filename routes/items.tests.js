@@ -13,7 +13,7 @@ afterEach(async () => {
 });
 
 describe("GET /items", async function () {
-  test('Get a list of the items' async function () {
+  test('Get a list of the items', async function () {
     const response = await request(app).get(`/items`);
     const { items } = response.body;
 
